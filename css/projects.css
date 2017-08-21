@@ -1,3 +1,16 @@
+body {
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #1abc9c;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
 [v-cloak] {
     display: none;
 }
@@ -9,6 +22,7 @@
     border-bottom: 1px solid #ccc;
     background: white;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .b-project {
