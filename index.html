@@ -35,10 +35,10 @@
                                     {{ project.description }}
                                 </div>
                                 <div class="b-project__created-at">
-                                    {{ project.created_at }}
+                                    {{ project.created_at | formatDate('DD MMM YYYY')}}
                                 </div>
                                 <div class="b-project__actions">
-                                    <a href="#">
+                                    <a href="#" v-on:click="deleteProject(project)">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </a>
                                 </div>

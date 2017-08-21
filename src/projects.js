@@ -18,7 +18,7 @@
 				url: serverURL,
 				method: 'get',
 				responseType: 'json',
-				data : {},
+				data: {},
 				headers: {
 					'Content-Type': 'application/json',
 					'Api-Token': 'zOGORFLK8T7MAejwUOLvZ5nBSGlPWFOwYvNOfBXm11ceQtHfuX783lTedoln'
@@ -28,6 +28,11 @@
 				console.log( response );
 				_this.projects = response.data;
 			} );
+		},
+		methods: {
+			deleteProject: function( project ) {
+				console.log( project );
+			}
 		}
 	} );
 })( window.Vue, window.axios, window.moment );
